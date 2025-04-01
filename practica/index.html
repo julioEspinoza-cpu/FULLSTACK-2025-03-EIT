@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1> Universidad Tecnologica Nacional</h1>
+        <h2>Ingeniería en Software</h2>
+    </header>
+
+    <main>
+        <h2>Formulario de inscripción</h2>
+        <section>
+            <form action="endpoint.js" method="post">
+                <div>
+                    <label for="id-fullname">Nombre y Apellido</label>
+                    <div>
+                        <input type="text" name="fullname" id="id-fullname" minlength="5" maxlength="35"
+                            placeholder="Ingresa tu Nombre y Apellido" required>
+                    </div>
+
+                    <div>
+                        <label for="id-email">Correo Electrónico</label>
+                        <div>
+                            <input type="text" name="correo" id="id-email" minlength="10" maxlength="50"
+                                placeholder="Escribe tu Email" required>
+                        </div>
+                    </div>
+                    <div><label for="id-password">Contraseña</label></div>
+                    <div><input type="password" name="password" id="id-password" minlength="8" maxlength="15"
+                            placeholder="Contraseña" required></div>
+
+                    <div><label for="id-Edad">Edad</label></div>
+                    <div><input type="text" name="Edad" id="id-Edad" minlength="2" maxlength="4"
+                            placeholder="Ingresar Años" required></div>
+                    <div>
+                        <label for="id-Estado civil0"> Estado Civil</label>
+                        <input type="radio" name="Estado Civil" id="Estado civil0" value="0" checked>Soltero
+                        <input type="radio" name="Estado Civil" id="Estado civil1" value="1">Casado
+                        <input type="radio" name="Estado Civil" id="Estado civil2" value="2">Divorsiado
+                    </div>
+                    <div> <label for="Id-Preferencias">Preferencias</label>
+                        <input type="checkbox" name="id-preferencias" id="preference1" value=1 checked>caminar
+                        <input type="checkbox" name="id-preferencias" id="preference2" value=2> correr
+                        <input type="checkbox" name="Id-Preferencias" id="preferencias3" value=3>trotar
+                    </div>
+                    <div>
+                        <label for="Id-Nacionality">Seleccionar Nacionalidad</label>
+                        <div>
+                            <select name="nationality" id="id-nationality">
+                        </div>
+                        <option value="ARGENTINA" selected>ARGENTINA</option>
+                        <option value="URUGUAY">URUGUAY</option>
+                        <option value="COLOMBIA">COLOMBIA</option>
+                        </select>
+                    </div>
+
+                    <div> <label for="id-subjects">MATERIAS</label></div>
+                    <div>
+                        <select name="materias " id="id-subject" multiple>
+                            <option value="fis">FISICA</option>
+                            <option value="mat">MATEMETICA</option>
+                            <option value="leng">LENGUA</option>
+                            <option value="his">HISTORIA</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="id_photo">COLOCAR AQUI LA IMAGEN </label>
+                        <DIV>
+                            <input type="file" name="photo" id="id-photo" accept="imagen/*" placeholder="IMAGEN">
+                        </div>
+                    </DIV>
+                    <div><label for="id-observaciones"></label>
+                        <textarea name="observaciones" id=" id-observaciones" cols="40" rows="3" maxlength="90"
+                            placeholder="ingrese sus observaciones">
+                    </textarea>
+                    </div>
+                    <div><input type="submit" value=" ENVIAR DATOS"></div>
+
+            </form>
+        </section>
+</body>
+
+</html>

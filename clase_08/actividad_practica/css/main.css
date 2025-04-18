@@ -56,7 +56,7 @@ aside {
 }
 
 .gallery div {
-    display: flex;
+    display: flex;  
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1.45vw;
@@ -144,7 +144,7 @@ footer iframe {
 /* Breakpoint: La ventana puede tener un ancho igual o inferior que 576px */
 @media (max-width: 576px) {
 
-    .container {
+    .container   {
         display: flex;
         flex-direction: column;
     }

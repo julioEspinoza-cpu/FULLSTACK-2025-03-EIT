@@ -52,4 +52,5 @@
     "material-icon-theme.folders.theme": "classic",
     "material-icon-theme.folders.color": "#AB8715",
     "notebook.defaultFormatter": "dbaeumer.vscode-eslint",
+    "liveServer.settings.port": 5501,
 }
